@@ -254,6 +254,75 @@ body {
     font-weight: 600;
 }
 
+/*Blogs*/
+.cw-blog {
+    background: #f5f9ff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cw-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.cw-heading {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.cw-blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cw-blog-item {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cw-blog-item:hover {
+  transform: translateX(5px);
+}
+
+.cw-blog-item img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cw-blog-content {
+  flex: 1;
+}
+
+.cw-meta {
+  font-size: 13px;
+  color: #888;
+}
+
+.cw-blog-content h3 {
+  font-size: 20px;
+  margin: 8px 0;
+  color: #111;
+  cursor: pointer;
+}
+
+.cw-blog-content h3:hover {
+  color: #d32f2f;
+}
+
+.cw-blog-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
 /* OTHER CATEGORIES */
 .other-row {
     display: flex;
@@ -309,3 +378,81 @@ body {
         height: 180px;
     }
 }
+/*shop page*/
+/*ul.products.columns-4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+ul.product.columns-4 li.product{
+    width: 23%;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    background: #fff;
+    box-sizing: border-box;
+}*/
+/* Products grid fix */
+ul.products.columns-4 {
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 25px;
+}
+
+/* Single product card */
+ul.products.columns-4 li.product {
+    width: 23% ;
+    list-style: none;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+/* Product image fix */
+ul.products.columns-4 li.product img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Product title */
+ul.products.columns-4 li.product h2,
+ul.products.columns-4 li.product .woocommerce-loop-product__title {
+    font-size: 16px;
+    font-weight: 600;
+    min-height: 45px;
+}
+
+/* Price styling */
+ul.products.columns-4 li.product .price {
+    color: #2e7d32;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* Add to cart button */
+ul.products.columns-4 li.product a.button {
+    background: #000;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    ul.products.columns-4 li.product {
+        width: 48% ;
+    }
+}
+
+@media (max-width: 480px) {
+    ul.products.columns-4 li.product {
+        width: 100% ;
+    }
+}
+.onsale{
+    
+}
+
