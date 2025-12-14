@@ -1,7 +1,7 @@
    <?php
 get_header();
 ?>
-<img src="https://i.pinimg.com/1200x/87/1c/59/871c59a95205840c0b884d7a425b7481.jpg" width="1600px" height="400px">
+<?php get_template_part('template_parts/banner'); ?>
     <section class="hero">
         <h1>Discover Your Next<br>Favorite Book</h1>
         <p>Find a wide selection of books from various genres<br>and authors</p>

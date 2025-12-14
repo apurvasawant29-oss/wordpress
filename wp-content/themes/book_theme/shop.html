@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="shop_style.css">
-    <title>Shop</title>
+  <meta charset="UTF-8" />
+  <title>Book Store | Shop</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+    }
+
+    .container{
+      display:flex;
+      padding:20px;
+      gap:20px;
+    }
+
+    /* LEFT FILTER SECTION */
+    .filter{
+      width:250px;
+      background:#fff;
+      padding:20px;
+      border-radius:8px;
+      height:fit-content;
+    }
+
+    .filter h3{
+      margin-bottom:15px;
+      font-size:18px;
+      border-bottom:2px solid #ddd;
+      padding-bottom:5px;
+    }
+
+    .filter-group{
+      margin-bottom:20px;
+    }
+
+    .filter-group h4{
+      margin-bottom:10px;
+      font-size:15px;
+      color:#333;
+    }
+
+    .filter-group label{
+      display:block;
+      margin-bottom:8px;
+      font-size:14px;
+      cursor:pointer;
+    }
+
+    /* RIGHT PRODUCT SECTION */
+    .products{
+      flex:1;
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:#fff;
+      padding:15px;
+      border-radius:8px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:5px;
+    }
+
+    .card h4{
+      margin:10px 0 5px;
+      font-size:16px;
+    }
+
+    .price{
+      color:#e63946;
+      font-weight:bold;
+      margin-bottom:10px;
+    }
+
+    .card button{
+      padding:8px 12px;
+      border:none;
+      background:#1d3557;
+      color:#fff;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    .card button:hover{
+      background:#457b9d;
+    }
+  </style>
 </head>
 <body>
-    <img src="https://i.pinimg.com/1200x/87/1c/59/871c59a95205840c0b884d7a425b7481.jpg">
+
+  <div class="container">
+
+    <!-- FILTER PANEL -->
+    <div class="filter">
+      <h3>Filter Books</h3>
+
+      <div class="filter-group">
+        <h4>Category</h4>
+        <label><input type="checkbox"> Education</label>
+        <label><input type="checkbox"> Psychology</label>
+        <label><input type="checkbox"> Horror</label>
+        <label><input type="checkbox"> Thriller</label>
+        <label><input type="checkbox"> Kids</label>
+        <label><input type="checkbox"> Story Books</label>
+        <label><input type="checkbox"> Religious</label>
+        <label><input type="checkbox"> Novels</label>
+      </div>
+
+      <div class="filter-group">
+        <h4>Price</h4>
+        <label><input type="radio" name="price"> Under ₹300</label>
+        <label><input type="radio" name="price"> ₹300 - ₹600</label>
+        <label><input type="radio" name="price"> Above ₹600</label>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="products">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/e7/93/7c/e7937c88054c7ecb73ce9d708e04f597.jpg" alt="Book">
+        <h4>Atomic Habit</h4>
+        <div class="price">₹399</div>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/d9/6c/3a/d96c3a6cf03495a3a231a89400e61ccd.jpg" alt="Book">
+        <h4>Rich Dad Poor Dad</h4>
+        <div class="price">₹399</div>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/19/ae/74/19ae741f1df450f7f5953f95b3456481.jpg" alt="Book">
+        <h4>1984</h4>
+        <div class="price">₹299</div>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/dc/c9/e8/dcc9e864d6f71e7746aef6d5b99dc31d.jpg" alt="Book">
+        <h4>jujutsu kaisen</h4>
+        <div class="price">₹599</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
