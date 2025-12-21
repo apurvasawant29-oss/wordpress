@@ -39,7 +39,7 @@ if ($query->have_posts()) :
                     </h2>
 
                     <div class="post-meta">
-                        <span><?php the_date(); ?></span>
+                        <span><?php echo get_the_date(); ?></span>
                         <span> | <?php the_author(); ?></span>
                     </div>
 
