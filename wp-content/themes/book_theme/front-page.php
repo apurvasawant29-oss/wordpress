@@ -131,14 +131,50 @@ get_header();
                     <h3>Pride and Prejudice</h3>
                 </div>
     </section>
-
-    <section class="cw-blog">
-  <div class="cw-container">
    
     <h2 class="cw-heading">Blogs & Articles</h2>
     <?php get_template_part('template_parts/posts'); ?>
 
-    
+    <section class="cw-blog">
+  <div class="cw-container">
+
+    <h2 class="cw-heading">Blogs & Articles</h2>
+
+    <div class="cw-blog-list">
+
+      <!-- Blog Item -->
+      <div class="cw-blog-item">
+        <img src="images/blog1.jpg" alt="Blog Image">
+        <div class="cw-blog-content">
+          <span class="cw-meta">10 Dec 2025 · Reading</span>
+          <h3>Best Fiction Books You Must Read This Winter</h3>
+          <p>Explore handpicked fiction titles that promise warmth, depth and unforgettable stories.</p>
+        </div>
+      </div>
+
+      <!-- Blog Item -->
+      <div class="cw-blog-item">
+        <img src="images/blog2.jpg" alt="Blog Image">
+        <div class="cw-blog-content">
+          <span class="cw-meta">05 Dec 2025 · Lifestyle</span>
+          <h3>How Reading Daily Can Change Your Life</h3>
+          <p>Reading isn’t just a hobby — it’s a habit that builds focus, empathy and creativity.</p>
+        </div>
+      </div>
+
+      <!-- Blog Item -->
+      <div class="cw-blog-item">
+        <img src="images/blog3.jpg" alt="Blog Image">
+        <div class="cw-blog-content">
+          <span class="cw-meta">01 Dec 2025 · Gifting</span>
+          <h3>Perfect Book Gifts for Every Age Group</h3>
+          <p>Confused what to gift? Books are timeless — here’s our ultimate gifting guide.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
       
 
   </div>
