@@ -20,6 +20,7 @@ get_header();
             <span>Story Books</span>
             <span>Religious</span>
             <span>Novels</span>
+            <span>Anime</span>
         </div>
     </section>
 
