@@ -455,3 +455,112 @@ ul.products.columns-4 li.product a.button {
 .onsale{
 text-decoration: none;
 }
+.woocommerce-products-header__title.page-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.site-main > p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* RESULT COUNT + SORTING (NO POSITION CHANGE) */
+.woocommerce-result-count,
+.woocommerce-ordering {
+  margin-bottom: 20px;
+}
+/* ===== SIDEBAR WRAPPER ===== */
+#sidebar {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ===== WIDGET COMMON ===== */
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+#sidebar h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 12px;
+  border-left: 4px solid #111;
+  padding-left: 10px;
+}
+
+/* ===== LIST ITEMS ===== */
+#sidebar ul li {
+  margin-bottom: 10px;
+}
+
+#sidebar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* ===== HOVER EFFECT ===== */
+#sidebar ul li a:hover {
+  background: #111;
+  color: #fff;
+  padding-left: 18px;
+}
+
+/* ===== CURRENT PAGE ===== */
+#sidebar .current_page_item a {
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===== SEARCH BOX ===== */
+#sidebar .search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#sidebar .search-form input[type="search"] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#sidebar .search-form button,
+#sidebar .search-form input[type="submit"] {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sidebar .search-form button:hover,
+#sidebar .search-form input[type="submit"]:hover {
+  background: #333;
+}
+
+/* ===== ARCHIVES & CATEGORIES COUNT ===== */
+#sidebar ul li span {
+  float: right;
+  background: #eee;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+}
