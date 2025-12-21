@@ -18,6 +18,11 @@ button {
     transition: 0.25s ease;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Hover effect */
 button:hover {
     transform: translateY(-3px);
@@ -616,8 +621,4 @@ span.wc-block-product-categories-list-item__image {
 }
 span.wc-block-product-categories-list-item-count {
     display: none;
-}
-.wp-post-image{
-    width: 250px;
-    height: 280px;
 }

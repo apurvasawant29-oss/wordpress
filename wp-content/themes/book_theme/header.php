@@ -18,7 +18,7 @@
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
-            <a href="#">Sign in </a>
+            <a href="http://localhost/wordpress/?page_id=152">Sign in </a>
         </nav>
         
         <button>
