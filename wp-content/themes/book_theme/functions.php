@@ -29,10 +29,13 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 function theme_enqueue_scripts() {
   
     wp_enqueue_style('theme-style', get_template_directory_uri() . '/css/theme-styles.css', '', filemtime(get_stylesheet_directory() . '/css/theme-styles.css'));
+     wp_enqueue_style('cart', get_template_directory_uri() . '/css/cart.css', '', filemtime(get_stylesheet_directory() . '/css/cart.css'));
+ 
     wp_enqueue_style('poststyle', get_template_directory_uri() . '/css/poststyle.css', '', filemtime(get_stylesheet_directory() . '/css/poststyle.css'));
   wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', '', filemtime(get_stylesheet_directory() . '/css/footer.css'));
 
  }
+
  //register widget sidebar for woocommerce shop page filters
  function bookmarket_register_shop_sidebar() {
     register_sidebar(array(

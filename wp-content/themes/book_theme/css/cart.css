@@ -1,0 +1,52 @@
+.product-remove{
+
+}
+
+.woocommerce-cart-form{
+    color: #bcd7e4;
+}
+
+.cart_totals{
+color: #061b3d;
+}
+
+.woocommerce-cart-form{
+    color: #0b0f44;
+    border-color: rgb(0, 0, 0);
+    border-width: 0ch;
+}
+
+.product-remove{
+
+}
+
+.cart_item{
+    background-color: rgb(203, 220, 243);
+}
+
+.remowe{
+    color: blue;
+}
+
+.product-thumbnail{
+    color: rgb(158, 171, 243);
+}
+
+.button{
+    color: darkgray;
+    
+}
+
+img{
+    height:100;
+    width: 100;
+    
+}
+
+input::placeholder{
+    font-size: 13px;
+}
+.input-text{
+    height: 35px;
+    width:150px;
+}
