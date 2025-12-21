@@ -140,41 +140,7 @@ get_header();
     <h2 class="cw-heading">Blogs & Articles</h2>
     <?php get_template_part('template_parts/posts'); ?>
 
-    <div class="cw-blog-list">
-
-      <!-- Blog Item -->
-      <div class="cw-blog-item">
-        <img src="https://www.crossword.in/cdn/shop/articles/DSC_4062_1_a29dbf70-bc6e-4814-8a60-4bb388b2c03f_1024x1024.jpg?v=1765005023" alt="Blog Image">
-        <div class="cw-blog-content">
-          <span class="cw-meta">10 Dec 2025 · Reading</span>
-          <h3>Best Fiction Books You Must Read This Winter</h3>
-          <p>Explore handpicked fiction titles that promise warmth, depth and unforgettable stories.</p>
-        </div>
-      </div>
-
-      <!-- Blog Item -->
-      <div class="cw-blog-item">
-        <img src="https://www.crossword.in/cdn/shop/articles/Blog_Banner_for_Website_Content_15_8256dbe8-b465-488d-b375-487df00ad48b_1024x1024.jpg?v=1761354964" alt="Blog Image">
-        <div class="cw-blog-content">
-          <span class="cw-meta">05 Dec 2025 · Lifestyle</span>
-          <h3>How Reading Daily Can Change Your Life</h3>
-          <p>Reading isn’t just a hobby — it’s a habit that builds focus, empathy and creativity.</p>
-        </div>
-      </div>
-
-      <!-- Blog Item -->
-      <div class="cw-blog-item">
-        <img src="https://www.crossword.in/cdn/shop/articles/Blog_Banner_for_Website_Content_11_1024x1024.jpg?v=1760750047" alt="Blog Image">
-        <div class="cw-blog-content">
-          <span class="cw-meta">01 Dec 2025 · Gifting</span>
-          <h3>Perfect Book Gifts for Every Age Group</h3>
-          <p>Confused what to gift? Books are timeless — here’s our ultimate gifting guide.</p>
-        </div>
-      </div>
     
-      
-
-    </div>
   </div>
 </section>
 
