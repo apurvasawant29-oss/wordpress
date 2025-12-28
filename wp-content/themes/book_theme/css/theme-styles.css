@@ -680,108 +680,171 @@ span.wc-block-product-categories-list-item-count {
     display: none;
 }
 /*Discover Page*/
-/* ===== PRICING SECTION MAIN ===== */
-.wp-block-columns.alignwide {
-    gap: 30px;
-    margin-top: 40px;
+/* ===== SECTION BACKGROUND ===== */
+
+.wp-block-group.alignfull {
+    background: linear-gradient(180deg, #f8fafc, #eef2ff);
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-/* ===== EACH PLAN CARD ===== */
-.wp-block-column.has-background {
-    background: linear-gradient(180deg, #1a1a1a, #0f0f0f) !important;
-    border-radius: 18px;
-    padding: 40px 30px !important;
-    color: #fff;
-    transition: all 0.4s ease;
-    position: relative;
-}
+/* ===== MAIN HEADING ===== */
 
-/* Hover Netflix-style */
-.wp-block-column.has-background:hover {
-    transform: scale(1.05);
-    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-}
-
-/* ===== PLAN TITLE ===== */
-.is-pricing-tier-name {
-    font-size: 28px !important;
-    font-weight: 700;
+.wp-block-heading.has-text-align-center {
+    font-size: 42px;
+    font-weight: 800;
+    color: #0f172a;
     margin-bottom: 10px;
-    color: #ffffff;
+}
+
+/* Subtitle */
+.wp-block-heading + p.has-text-align-center {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 60px;
+}
+
+/* ===== PRICING TITLE ===== */
+
+.is-pricing-title {
+    font-size: 34px !important;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 50px;
+}
+
+/* ===== CENTER PRICING CARDS ===== */
+
+.wp-block-columns.alignwide {
+    justify-content: center;
+    gap: 35px;
+}
+
+/* ===== CARD DESIGN ===== */
+
+.wp-block-column.has-background {
+    background: #ffffff !important;
+    border-radius: 22px;
+    padding: 45px 35px !important;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+    max-width: 340px;
+    transition: all 0.4s ease;
+    border: 1px solid #e5e7eb;
+}
+
+/* Hover Animation */
+.wp-block-column.has-background:hover {
+    transform: translateY(-14px);
+    box-shadow: 0 35px 80px rgba(99, 102, 241, 0.18);
+}
+
+/* ===== PLAN NAME ===== */
+
+.is-pricing-tier-name {
+    font-size: 24px !important;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
 }
 
 /* ===== PRICE ===== */
+
 .is-pricing-tier-price strong {
-    font-size: 42px;
-    color: #e50914;
+    font-size: 44px;
+    font-weight: 800;
+    color: #6366f1;
 }
 
-/* per month */
-.wp-block-column p.has-cyan-bluish-gray-color {
-    color: #b3b3b3 !important;
-    margin-bottom: 20px;
+.is-pricing-tier-price + p {
+    margin-top: -8px;
+    color: #64748b;
 }
 
-/* ===== BUTTON ===== */
+/* ===== BUTTONS ===== */
+
 .wp-block-button__link {
-    background: #e50914 !important;
-    color: #fff !important;
-    border-radius: 30px !important;
+    border-radius: 999px !important;
     padding: 14px 0 !important;
     font-size: 16px;
     font-weight: 600;
-    border: none !important;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.wp-block-button__link:hover {
-    background: #ff1f2a !important;
-    transform: scale(1.03);
-}
-
-/* ===== OUTLINE BUTTON FIX ===== */
+/* Outline */
 .is-style-outline .wp-block-button__link {
-    background: transparent !important;
-    border: 2px solid #e50914 !important;
+    border: 2px solid #6366f1;
+    color: #6366f1;
+    background: transparent;
 }
 
 .is-style-outline .wp-block-button__link:hover {
-    background: #e50914 !important;
+    background: #6366f1;
+    color: #ffffff;
 }
 
-/* ===== SERVICES LIST ===== */
+/* Fill (Standard Plan) */
+.is-style-fill .wp-block-button__link {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    color: #ffffff;
+    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.4);
+}
+
+.is-style-fill .wp-block-button__link:hover {
+    transform: scale(1.05);
+}
+
+/* ===== FEATURES LIST ===== */
+
 .is-pricing-tier-service-checked {
-    color: #ddd;
     font-size: 15px;
-    margin: 10px 0;
+    color: #334155;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
-/* Tick color */
 .is-pricing-tier-service-checked strong {
-    color: #00e676;
+    color: #22c55e;
     font-size: 16px;
 }
 
-/* ===== POPULAR (STANDARD PLAN HIGHLIGHT) ===== */
-.wp-block-column:nth-child(2)::before {
-    content: "POPULAR";
-    position: absolute;
-    top: 20px;
-    right: -45px;
-    background: #e50914;
-    color: #fff;
-    padding: 6px 50px;
-    transform: rotate(45deg);
-    font-size: 12px;
-    font-weight: 600;
+/* ===== POPULAR CARD ===== */
+
+.wp-block-column:nth-child(2) {
+    border: 2px solid #6366f1;
+    transform: scale(1.06);
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
+/* POPULAR BADGE */
+.wp-block-column:nth-child(2)::before {
+    content: "MOST POPULAR";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    color: #fff;
+    padding: 6px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 999px;
+    box-shadow: 0 10px 25px rgba(99,102,241,0.4);
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 900px) {
+    .wp-block-columns.alignwide {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .wp-block-column.has-background {
-        transform: none !important;
+        max-width: 100%;
+    }
+
+    .wp-block-column:nth-child(2) {
+        transform: scale(1);
     }
 }
