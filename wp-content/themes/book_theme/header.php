@@ -18,7 +18,6 @@
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
-            <a href="http://localhost/wordpress/?page_id=152">Sign in </a>
         </nav>
         
         <button>
@@ -27,6 +26,24 @@
   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
 </svg>
 
-        </button>    
+        </button>   
+    <div class="profile-menu">
+    <button class="profile-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+             class="profile-icon"
+             alt="Profile">
+    </button>
+
+    <div class="dropdown">
+        <a href="#">My Account / Login</a>
+        <a href="http://localhost/wordpress/?page_id=167">Discover Plan</a>
+        <a href="#">My Orders</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Help & Support</a>
+        <hr>
+        <a href="#">Logout</a>
+    </div>
+</div>
+ 
 
     </header>
