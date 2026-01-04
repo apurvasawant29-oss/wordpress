@@ -42,9 +42,7 @@ if ( is_active_sidebar( 'shop-sidebar' ) ) : ?>
         <?php dynamic_sidebar( 'shop-sidebar' ); ?>
     </aside>
 <?php endif;
-
 if ( woocommerce_product_loop() ) {
-
 	/**
 	 * Hook: woocommerce_before_shop_loop.
 	 *

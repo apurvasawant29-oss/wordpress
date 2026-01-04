@@ -1,0 +1,97 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:#fff;
+}
+
+/* Section */
+.pricing-section{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.pricing-section h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.pricing-section p{
+    color:#bbb;
+    margin-bottom:50px;
+}
+
+/* Cards layout */
+.pricing-cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/* Card */
+.card{
+    background:linear-gradient(180deg,#1b1b1b,#111);
+    border-radius:16px;
+    padding:30px;
+    transition:0.4s;
+    position:relative;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 50px rgba(0,0,0,0.7);
+}
+
+/* Popular */
+.popular-badge{
+    position:absolute;
+    top:15px;
+    right:-40px;
+    background:#e50914;
+    padding:6px 50px;
+    transform:rotate(45deg);
+    font-size:12px;
+}
+
+.price{
+    font-size:38px;
+    margin:15px 0;
+}
+
+.duration{
+    font-size:14px;
+    color:#aaa;
+}
+
+/* List */
+.card ul{
+    list-style:none;
+    margin:25px 0;
+}
+
+.card ul li{
+    margin:10px 0;
+    color:#ddd;
+}
+
+/* Button */
+.card button{
+    width:100%;
+    padding:14px;
+    background:#e50914;
+    border:none;
+    border-radius:8px;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#ff1f2a;
+}
